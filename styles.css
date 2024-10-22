@@ -1,4 +1,4 @@
-/* General Body Styles */
+
 body {
     font-family: 'Times New Roman', Times, serif;
     color: black;
@@ -7,7 +7,7 @@ body {
     padding: 20px;
 }
 
-/* Gallery Container */
+
 .gallery {
     max-width: 800px; /* Set a max width for the gallery */
     margin: auto;
@@ -18,7 +18,7 @@ body {
     padding: 20px; /* Inner padding for spacing */
 }
 
-/* Button Styles */
+
 .category-buttons {
     margin-bottom: 20px;
     color: black;
@@ -37,13 +37,13 @@ body {
     transition: background-color 0.3s, transform 0.2s; /* Transition for hover effects */
 }
 
-/* Button Hover Effect */
+
 .category-btn:hover {
     background-color: #0056b3; /* Darker color on hover */
     transform: translateY(-2px); /* Slight lift effect on hover */
 }
 
-/* Main Image Styles */
+
 #main-image {
     max-width: 100%; /* Ensure the image does not exceed the width of its container */
     max-height: 600px; /* Set a max height to avoid stretching */
@@ -54,7 +54,7 @@ body {
     margin-bottom: 20px; /* Space below the main image */
 }
 
-/* Thumbnail Container Styles */
+
 .thumbnail-container {
     display: flex;
     justify-content: center;
@@ -62,7 +62,6 @@ body {
     flex-wrap: wrap; /* Allow wrapping of thumbnails */
 }
 
-/* Thumbnail Styles */
 .thumbnail {
     width: 120px; /* Set thumbnail width */
     max-height: 100px; /* Set max height for thumbnails */
@@ -73,13 +72,13 @@ body {
     transition: border 0.3s, transform 0.2s; /* Transition for border and scaling */
 }
 
-/* Thumbnail Hover Effect */
+
 .thumbnail:hover {
     border: 2px solid #007BFF; /* Blue border on hover */
     transform: scale(1.05); /* Slightly enlarge thumbnail on hover */
 }
 
-/* Responsive Styles */
+
 @media (max-width: 600px) {
     .category-btn {
         padding: 10px 15px; /* Smaller padding on mobile */

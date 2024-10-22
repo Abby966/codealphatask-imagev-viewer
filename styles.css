@@ -1,0 +1,91 @@
+/* General Body Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: #656f7b; /* Dark gray background */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Gallery Container */
+.gallery {
+    max-width: 800px; /* Set a max width for the gallery */
+    margin: auto;
+    text-align: center;
+    background: rgb(255, 255, 255); /* White background for the gallery */
+    border-radius: 100px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px; /* Inner padding for spacing */
+}
+
+/* Button Styles */
+.category-buttons {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.category-btn {
+    margin: 5px;
+    padding: 12px 20px; /* Increased padding for a better button feel */
+    border: none;
+    border-radius: 100px; /* Rounded button corners */
+    background-color: #dc8ed8; /* Button color */
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 15px; /* Larger font for better readability */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for hover effects */
+}
+
+/* Button Hover Effect */
+.category-btn:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Main Image Styles */
+#main-image {
+    max-width: 100%; /* Ensure the image does not exceed the width of its container */
+    max-height: 600px; /* Set a max height to avoid stretching */
+    object-fit: contain; /* Maintain aspect ratio without stretching */
+    border: 3px solid #007BFF; /* Blue border around the main image */
+    border-radius: 10px; /* Rounded corners for the main image */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    margin-bottom: 20px; /* Space below the main image */
+}
+
+/* Thumbnail Container Styles */
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Increased gap between thumbnails */
+    flex-wrap: wrap; /* Allow wrapping of thumbnails */
+}
+
+/* Thumbnail Styles */
+.thumbnail {
+    width: 120px; /* Set thumbnail width */
+    max-height: 100px; /* Set max height for thumbnails */
+    object-fit: cover; /* Crop images to fit the thumbnail size */
+    cursor: pointer;
+    border: 2px solid transparent; /* No border initially */
+    border-radius: 5px; /* Rounded corners for thumbnails */
+    transition: border 0.3s, transform 0.2s; /* Transition for border and scaling */
+}
+
+/* Thumbnail Hover Effect */
+.thumbnail:hover {
+    border: 2px solid #007BFF; /* Blue border on hover */
+    transform: scale(1.05); /* Slightly enlarge thumbnail on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .category-btn {
+        padding: 10px 15px; /* Smaller padding on mobile */
+        font-size: 14px; /* Smaller font size on mobile */
+    }
+    .thumbnail {
+        width: 90px; /* Smaller thumbnails on mobile */
+    }
+}
